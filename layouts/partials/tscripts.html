@@ -21,7 +21,7 @@
 {{ printf "<!-- Este es lo elm a inlcuir del tscripts.html = %s -->" $jselm | safeHTML }}
 {{ if ne $jselm "noelm" }}
    {{ if hugo.IsProduction }}
-      {{ $jsNombre := printf "js/%s.js" $jselm | }}
+      {{ $jsNombre := printf "js/%s.js" $jselm }}
       {{ $jsFileDeElm = resources.Get $jsNombre | resources.Minify | resources.Fingerprint }}
       <script type="text/javascript"
               src="{{ $jsFileDeElm.RelPermalink }}"
