@@ -30,8 +30,6 @@ node_modules
 public
 # elm related
 elm-stuff
-# lo procesado
-assets/output
 
 # is a theme, luego  
 /assets/TAGS
@@ -45,4 +43,3 @@ resources/_gen/*
 /TAGS
 *.html#
 /pre-delete/
-assets/elm/*.js
