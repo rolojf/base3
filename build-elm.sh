@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for dir in themes/rolo-base/assets/elm/src/*/     # list directories
+for dir in assets/elm/src/*/     # list directories
   do
     dira=${dir%*/}      # remove the trailing "/"
     echo $dira
@@ -13,7 +13,7 @@ for dir in themes/rolo-base/assets/elm/src/*/     # list directories
          done
        cd $dir # assets/elm/src/${dira##*/}
        elm make $cuales--output=../../${dira##*/}.js $@
-       cd ../../../../../../
+       cd ../../../../
      else
        echo "$dira está vacio"
      fi
