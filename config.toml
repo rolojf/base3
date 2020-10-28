@@ -1,0 +1,101 @@
+baseurl = "https://rolo.tips/"
+title = "Mi página matona"
+#theme = "rolo-base"
+
+paginate = "5" # Number of posts per page
+paginatePath = ""
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+languageCode = "es"
+DefaultContentLanguage = "es"
+
+[languages]
+
+[languages.en]
+   title = "My killer page"
+   weight = 2
+   contentDir = "content/en"
+   languageName = "English"
+
+[[languages.en.menu.main]]
+   name = "General Notes"
+   url = "en/post/"
+   weight = -110
+
+[languages.es]
+   title = "Mi página matona"
+   weight = 1
+   contentDir = "content/es"
+   languageName = "Español"
+
+[[languages.es.menu.main]]
+   name = "Notas en General"
+   url = "post"
+   weight = -110
+
+[build]
+  writeStats = true
+
+[Author]
+  name = "Rolando Flores"
+  bio = "Aquí se supone pongo mi bio"
+  avatar = "img/avatar.png"
+
+[Params]
+  subtitle = "En Cabeza Ajena" # Subtitle of your site
+  description = "Salvo que quieras encontrar atajo" # Descrip del sitio a como sale en google
+  copyright = "Derechos reservados" # Footer copyright holder, otherwise will use site title
+  opengraph = false
+  g_analytics = false
+  readmore = true # Show "Read more" button in list if true
+  authorbox = true
+  twitter_cards = true # Enable Twitter Cards if true
+  toc = false # Enable Table of Contents
+  post_navigation = true # Show post navigation at bottom of pages if true
+  post_meta = ["date", "categories", "translations"] # Order of post meta information
+  mainSections = ["post"] # , "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "2006-01-02" # Change the format of dates
+  #  sectionPagesMenu = "main"
+  elm = "noelm"
+
+[Params.social]
+# Enable parts of social widgetpost/
+twitter = "a1rolo"
+instagram = ""
+linkedin = "username"
+facebook = ""
+github = "rolojf"
+mail = "rolo@psolar.mx"
+whatsapp = "5218145930809?text=Mensaje%20desde%20pag.%20de%20internet%20"
+
+[Params.ref] # OpenGraph
+og_title = "Interesting Ideas"
+og_url = "https://rolo.tips/"
+# og_image = ""
+
+[Params.sidebar]
+  widgets = ["recent"] # , "categories", "taglist"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[Params.navega] # las classes para las ligas en los menu
+  activa = " text-white bg-gray-900"
+  pasiva = " text-gray-300 " # agrega un espacio al final
+
+# Custom social links
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  url = "https://youtube.com/user/username"
+  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+
+[[Params.widgets.social.custom]]
+  title = "My Home Page"
+  url = "http://example.com"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -5,7 +5,7 @@
 {{ $mio := resources.Get "css/mio.css" }}
 {{ $especial := resources.Get "css/especial.css" }}
 
-{{ $estilo := slice $fonts $miTailwind $misBasicos $modales $mio $especial | resources.Concat "css/site.css" | resources.PostCSS (dict "config" "themes/rolo-base/assets/css/postcss.config.js" ) }}
+{{ $estilo := slice $fonts $miTailwind $misBasicos $modales $mio $especial | resources.Concat "css/site.css" | resources.PostCSS (dict "config" "assets/css/postcss.config.js" ) }}
 {{ if hugo.IsProduction }}
    {{ $miCSS := $estilo | minify | fingerprint | resources.PostProcess }}
    <link rel="stylesheet" type="text/css" href="{{ $miCSS.RelPermalink }}" integrity="{{ $miCSS.Data.Integrity }}">
