@@ -1,5 +1,6 @@
 dependencies:
   '@sanity/client': 2.0.1
+  '@tailwindcss/typography': 0.2.0_tailwindcss@1.9.6
   '@tailwindcss/ui': 0.6.2_tailwindcss@1.9.6
   alpinejs: 2.7.3
   autoprefixer: 10.0.1
@@ -2012,6 +2013,7 @@ packages:
       integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 specifiers:
   '@sanity/client': ^2.0.1
+  '@tailwindcss/typography': ^0.2.0
   '@tailwindcss/ui': ^0.6.2
   alpinejs: ^2.7.2
   autoprefixer: ^10.0.1
