@@ -1,0 +1,839 @@
+#+hugo_base_dir: ../
+#+hugo_section: /
+#+hugo_level_offset: 0
+
+* Para Enrico Epifanía 2o Proy.
+:PROPERTIES:
+:EXPORT_FILE_NAME: revisiones
+:EXPORT_HUGO_SECTION: check
+:END:
+
+#+html: </p><section><p>
+** Ingeniería de Paneles Solares
+*** Descripción del trabajo
+
+*** ¿Cuántos Paneles Conviene Poner?
+Normalmente se hacen proyectos tomando como referencia dos años de consumo eléctrico.
+
+** Otro rollo
+
+#+attr_html: :class cabezon
+Este rollo se suponex debe ser color rojo
+
+
+
+#+html: </p></section><p>
+
+** Cotización Revisada de Ampliación Panel Solar - Rodolfo Alanís 
+:PROPERTIES:
+:EXPORT_FILE_NAME: rodolfo-alanis2
+:EXPORT_HUGO_SECTION: cotiza
+:END:
+*** Cotización Ampliación Paneles para Rodolfo Alanís 
+**** Datos sobre esta cotización
+- Para ::  Rodolfo Alanís V.
+- Fecha :: <2019-11-20 mié>
+- Dirección ::  Portón 514, Col. Portón del Valle Alto Mty NL 67277
+
+**** Descripción del requerimiento
+Cotizar dos opciones:
+- 4 módulos fotovoltaicos dejando preparación para después ampliar a 8 con micro-inversor.
+- 8 módulos fotovoltaicos adicionales de 405w con financiamiento.
+
+**** Propuestas
+Dos propuestas con mejoras opcionales. Ambas de 10 módulos fotovoltaicos de calidad Tier 1 (certificación que otorga Bloomberg Finnancial a proveedores confiables para créditos bancarios en proyectos internacionales).
+
+#+html: <div class="columnas"><div class="junto">
+
+***** Propuesta 1
+
+#+attr_html: :class bold-ultima-linea moneda-1 moneda-2
+#+caption: 4 Módulos de 330w
+| PRECIO PANEL SOLAR   | USD*     | MXP       |
+| Panel Solar Completo | 2,031.71 | 39,516.67 |
+| Instalación          |          | 9,599.37  |
+| S. Monitoreo         |          | 4,853.06  |
+| Total Panel SolarCFE |          | 53,969   |
+
+
+Material importado a tipo de cambio de $19.45 ±20 centavos.
+
+*Tipo de Inversor en esta propuesta:*
+
+Micro-inversor con sistema de monitoreo. 
+
+
+#+html: </div><div class="junto">
+
+***** Propuesta 2
+
+#+attr_html: :class bold-ultima-linea moneda-1 moneda-2
+#+caption: 8 módulos de 405 watts
+| PRECIO PANEL SOLAR    | USD      | MXP        |
+| Panel Solar Completo  | 3,563.55 | 69,311.09  |
+| Instalación           |          | 16,106.42  |
+| S. Monitoreo          |          | 1,128.57   |
+| SubTotal  Panel Solar |          | 86,546.08  |
+
+
+Material importado en usd a tipo de cambio de $19.45 ±20 centavos.
+
+*Tipo de Inversor en esta propuesta:*
+
+Inversor estándar (Chino - equivalente a 5 años de garantía).
+
+*Mejoras opcionales:*
+
+Como mejora opcional, sería poner inversor alemán de 10 años de garantía por costo adicional de $11,698 mxp.
+
+#+html: </div></div>
+
+**** Condiciones Comerciales
+#+html: <div class="columnas"><div class="junto">
+
+***** Tipo de cambio
+- El precio es en pesos para esta cotización y queda establecido en base al precio en el Diario Oficial de la Federación el día de pago del anticipo.
+- Si el tipo de cambio sufre un aumento o disminución mayor de 20 centavos, el precio total de proyecto se ajustará.
+
+***** Forma de pago
+- Los pagos se hacen en efectivo o por cheque.
+- Anticipo del 50% al inicio del proyecto al tiempo de la firma del contrato.
+- 20% adicional contra entrega del proyecto del proyecto instalado, funcionando.
+- 2x15% pagos mensuales (Enero y Febrero 2020).
+
+***** Tiempos de entrega
+- La entrega del equipo fotovoltáico tarda ocho días hábiles a partir de la entrega de anticipo y firma de contrato compra-venta.
+- La instalación de panel solar, tarda dos semanas a partir de la entrega de los materiales.
+
+#+html: </div><div class="junto">
+  
+***** Sobre garantías
+- Los componentes que se entregan son nuevos y cuentan con la garantía de fábrica propia de cada componentes.
+- Al final del proyecto se hace entrega de la documentación de cada componente.
+- El panel solar cuenta con 10 años de garantía en defectos de fabricación y 25 años garantía de producción mínima del 80%.
+- La estructura de soporte de aluminio cuenta con una garantía del fabricante de 20 años.
+- La mano de obra está garantizada por 5 años, esto es que calidad de la instalación cumpla con las normas vigentes.
+
+***** Garantía extendida incluida
+- *Como cobertura de garantía extendida por dos años:* Queda cubierto adicionalmente que cualquier falla en los componentes, según se detecte en el sistema de monitoreo, será inspeccionado y corregido sin costo de mano de obra.
+- Posteriormente, los componentes principales continúan con su garantía original de fábrica y el usuario es responsable de reportar y conseguir hacer efectiva la garantía directo con el fabricante en caso necesario, así como la contratación de la mano de obra del trabajo de reparación.
+- Opcional se ofrecerán contratos para ampliar la cobertura de garantía extendida y mantenimiento,  por un costo aproximado $250/módulo fotovoltaico (por definir).
+
+#+html: </div></div>
+* Cotización Ampliación Paneles para Rodolfo Alanís 
+:PROPERTIES:
+:EXPORT_FILE_NAME: rodolfo-alanis
+:EXPORT_HUGO_SECTION: cotiza
+:END:
+** Cotización Ampliación Paneles para Rodolfo Alanís 
+*** Datos sobre esta cotización
+- Para ::  Rodolfo Alanís V.
+- Fecha :: <2019-11-05 mar>
+- Dirección ::  Portón 514, Col. Portón del Valle Alto Mty NL 67277
+
+*** Descripción del requerimiento
+Cotizar 10 módulos fotovoltaicos adicionales, de contado.
+
+*** Propuestas
+Dos propuestas con mejoras opcionales. Ambas de 10 módulos fotovoltaicos de calidad Tier 1 (certificación que otorga Bloomberg Finnancial a proveedores confiables para créditos bancarios en proyectos internacionales).
+
+#+html: <div class="columnas">
+#+html: <div class="junto">
+
+**** Propuesta Uno
+
+#+attr_html: :class bold-ultima-linea moneda-1
+#+caption: Módulos de 330w.
+| Precio Panel Solar     | Monto   |
+| Panel Solar Completo* | 65,261 |
+| Instalación           | 15,529 |
+| S. Monitoreo          | 771 |
+| SubTotal  Panel Solar | 81,562 |
+
+Material importado $3,387 usd a tipo de cambio de $19.20 ±20 centavos.
+
+*Tipo de Inversor en esta propuesta:*
+
+Inversor Alemán de 10 años de garantía, recomendable para instalación sin afectación por sombras.
+
+*Mejoras opcionales:*
+
+Optimizar la generación de cada módulo con microinversores (conviene donde hay afectación por sombras o diferentes orientación).
+Costo Adicional  $6,531
+
+#+html: </div><div class="junto">
+
+**** Propuesta 2
+
+#+attr_html: :class bold-ultima-linea moneda-1
+#+caption: módulos de 405 watts.
+| Precio Panel Solar    | MXP    |
+| Panel Solar Completo  | 73,062 |
+| Instalación           | 18,464 |
+| S. Monitoreo          | 771    |
+| SubTotal  Panel Solar | 92,297 |
+
+
+Material importado $3,805 usd a tipo de cambio de $19.20 ±20 centavos.
+
+*Tipo de Inversor en esta propuesta:*
+
+Inversor Chino de 5 años de garantía, ideal para instalación sin afectación por sombras.
+
+*Mejoras opcionales:*
+
+Optimizar módulo afectados por sombras $2,184 mxp por módulo. Sujeto a disponibilidad (optimizadores disponibles 4).
+
+Otra mejora opcional es inversor alemán de 10 años de garantía $15,216 mxp adicional.
+
+#+html: </div></div>
+
+* Cotización Revisada de Ampliación Panel Solar - Rodolfo Alanís 
+:PROPERTIES:
+:EXPORT_FILE_NAME: rodolfo-alanis2
+:EXPORT_HUGO_SECTION: cotiza
+:END:
+** Cotización Ampliación Paneles para Rodolfo Alanís 
+*** Datos sobre esta cotización
+- Para ::  Rodolfo Alanís V.
+- Fecha :: <2019-11-20 mié>
+- Dirección ::  Portón 514, Col. Portón del Valle Alto Mty NL 67277
+
+*** Descripción del requerimiento
+Cotizar dos opciones:
+- 4 módulos fotovoltaicos dejando preparación para después ampliar a 8 con micro-inversor.
+- 8 módulos fotovoltaicos adicionales de 405w con financiamiento.
+
+*** Propuestas
+Dos propuestas con mejoras opcionales. Ambas de 10 módulos fotovoltaicos de calidad Tier 1 (certificación que otorga Bloomberg Finnancial a proveedores confiables para créditos bancarios en proyectos internacionales).
+
+#+html: <div class="columnas"><div class="junto">
+
+**** Propuesta 1
+
+#+attr_html: :class bold-ultima-linea moneda-1 moneda-2
+#+caption: 4 Módulos de 330w
+| PRECIO PANEL SOLAR   | USD*     | MXP       |
+| Panel Solar Completo | 2,031.71 | 39,516.67 |
+| Instalación          |          | 9,599.37  |
+| S. Monitoreo         |          | 4,853.06  |
+| Total Panel SolarCFE |          | 53,969   |
+
+
+Material importado a tipo de cambio de $19.45 ±20 centavos.
+
+*Tipo de Inversor en esta propuesta:*
+
+Micro-inversor con sistema de monitoreo. 
+
+
+#+html: </div><div class="junto">
+
+**** Propuesta 2
+
+#+attr_html: :class bold-ultima-linea moneda-1 moneda-2
+#+caption: 8 módulos de 405 watts
+| PRECIO PANEL SOLAR    | USD      | MXP        |
+| Panel Solar Completo  | 3,563.55 | 69,311.09  |
+| Instalación           |          | 16,106.42  |
+| S. Monitoreo          |          | 1,128.57   |
+| SubTotal  Panel Solar |          | 86,546.08  |
+
+
+Material importado en usd a tipo de cambio de $19.45 ±20 centavos.
+
+*Tipo de Inversor en esta propuesta:*
+
+Inversor estándar (Chino - equivalente a 5 años de garantía).
+
+*Mejoras opcionales:*
+
+Como mejora opcional, sería poner inversor alemán de 10 años de garantía por costo adicional de $11,698 mxp.
+
+#+html: </div></div>
+
+*** Condiciones Comerciales
+#+html: <div class="columnas"><div class="junto">
+
+**** Tipo de cambio
+- El precio es en pesos para esta cotización y queda establecido en base al precio en el Diario Oficial de la Federación el día de pago del anticipo.
+- Si el tipo de cambio sufre un aumento o disminución mayor de 20 centavos, el precio total de proyecto se ajustará.
+
+**** Forma de pago
+- Los pagos se hacen en efectivo o por cheque.
+- Anticipo del 50% al inicio del proyecto al tiempo de la firma del contrato.
+- 20% adicional contra entrega del proyecto del proyecto instalado, funcionando.
+- 2x15% pagos mensuales (Enero y Febrero 2020).
+
+**** Tiempos de entrega
+- La entrega del equipo fotovoltáico tarda ocho días hábiles a partir de la entrega de anticipo y firma de contrato compra-venta.
+- La instalación de panel solar, tarda dos semanas a partir de la entrega de los materiales.
+
+#+html: </div><div class="junto">
+  
+**** Sobre garantías
+- Los componentes que se entregan son nuevos y cuentan con la garantía de fábrica propia de cada componentes.
+- Al final del proyecto se hace entrega de la documentación de cada componente.
+- El panel solar cuenta con 10 años de garantía en defectos de fabricación y 25 años garantía de producción mínima del 80%.
+- La estructura de soporte de aluminio cuenta con una garantía del fabricante de 20 años.
+- La mano de obra está garantizada por 5 años, esto es que calidad de la instalación cumpla con las normas vigentes.
+
+**** Garantía extendida incluida
+- *Como cobertura de garantía extendida por dos años:* Queda cubierto adicionalmente que cualquier falla en los componentes, según se detecte en el sistema de monitoreo, será inspeccionado y corregido sin costo de mano de obra.
+- Posteriormente, los componentes principales continúan con su garantía original de fábrica y el usuario es responsable de reportar y conseguir hacer efectiva la garantía directo con el fabricante en caso necesario, así como la contratación de la mano de obra del trabajo de reparación.
+- Opcional se ofrecerán contratos para ampliar la cobertura de garantía extendida y mantenimiento,  por un costo aproximado $250/módulo fotovoltaico (por definir).
+
+#+html: </div></div>
+* Cotización para Raúl Garza
+:PROPERTIES:
+:EXPORT_FILE_NAME: raul-garza-2
+:EXPORT_HUGO_SECTION: cotiza
+:END:
+** Panel Solar - Raúl Garza Villarreal
+*** Cómo Definimos Esta Propuesta
+
+#+html: <div class="columnas"><div class="junto">
+**** Datos sobre esta cotización
+- Fecha :: <2020-02-12 mié>
+- Dirección ::  Mar Mediterraneo 838, San Agustín Campestre
+- Revisión :: Segunda Revisión
+
+**** Descripción del requerimiento
+Poner paneles con la intención de ahorrar en el pago a CFE.
+
+**** ¿Cuántos Paneles Instalar?
+Cuando se tiene tarifa de media tensión, se debe generar más energía que la se que consume. Solo lo suficiente para apenas superar el consumo.
+
+Bajo el esquema de *"Net Metering"*  lo que se produce de más, CFE lleva la cuenta y permite que se consuma en los siguientes doce meses.
+
+#+html: </div><div class="junto">
+
+**** Consumo eléctrico
+#+attr_html: :alt Consumo Eléctrico Histórico vs. Proyectado
+#+caption: En verano se genos del consumo, pero se toma del sobrante previo acumulado.
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/raul-garza/consumo-vs-generacion.png
+
+El consumo de Oct-2018 a Sep-2019 fue de 15,039 kWh.
+
+El panel propuesto produce en un año: 18,000 kWh (producción mínima garantizada con variación aceptable del 10%).
+
+#+html: </div></div><hr/>
+*** Propuesta Detalle
+
+#+html: <div class="columnas"><div class="junto">
+**** Características del equipo propuesto
+- Panel :: 45 módulos de 405 watts proveedor certificado Tier 1
+- Inversor :: Inversor Alemán, 10 años de garantía
+- Estructura :: Aluminio
+**** Acomodo de los paneles solares
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/raul-garza/lo-rg1.png
+#+html: </div><div class="junto">
+
+**** Consideraciones importantes
+*Ya se incluye*
+Este proyecto, requiere carta de verificación para que CFE acceda al contrato de cogeneración y cambio a medidor.
+
+Se requiere medidor bidireccional para media tensión. 
+
+De ambos trámites, el tiempo y el costo de los mismos, en esta nueva cotización si está incluido en esta cotización.
+
+
+**** Inversión
+
+#+attr_html: :class bold-ultima-linea moneda-1 moneda-2
+| PRECIO PANEL SOLAR   | USD*   | MXP     |
+| Fotovoltaico         | 16,315 | 305,084 |
+| Instalación          |        | 60,430  |
+| Verificación / CFE   |        | 64,575  |
+| SubTotal Panel Solar |        | 430,089 |
+| iva 16%              |        | 68,814 |
+| Total                |        | 498,903 |
+
+*Como referencia vs. cotización Anterior:*
+- Costo total cotización anterior, $447,454 (44 paneles)
+- Antes no incluía la verificación y medidor de CFE.
+- Había error en el costo de instalación, se re-clasificó.
+- Para aprovechar mejor los inversores y compensar la orientación, ahora son 45 paneles.
+- Tipo de cambio bajó. Antes en: $18.85
+
+Material importado en usd a tipo de cambio de $18.70 ±20 centavos.
+
+#+html: </div></div><hr/>
+
+*** Condiciones Comerciales
+
+#+html: <div class="columnas"><div class="junto">
+**** Tipo de cambio
+- El precio es en pesos para esta cotización y queda establecido en base al precio en el Diario Oficial de la Federación el día de pago del anticipo.
+- Si el tipo de cambio sufre un aumento o disminución mayor de 20 centavos, el precio total de proyecto se ajustará.
+
+**** Forma de pago
+- Anticipo del 50% al inicio del proyecto al tiempo de la firma del contrato.
+- 30% adicional contra entrega del proyecto del proyecto instalado, funcionando.
+- 20% de pago final cuando se termine con la instalación del panel solar. 
+El tiempo que llevan los trámites para el cambio de medidor está fuera de nuestro control y es aparte. 
+
+#+html: </div><div class="junto">
+
+**** Tiempos de entrega
+- La entrega del equipo fotovoltáico tarda 15 días hábiles a partir de la entrega de anticipo y firma de contrato compra-venta.
+- La instalación de panel solar, tarda tres semanas normalmente (según el clima lo permita),  partir de la entrega de los materiales.
+
+**** Sobre garantías
+- Los componentes que se entregan son nuevos y cuentan con la garantía de fábrica propia de cada componentes.
+- Al final del proyecto se hace entrega de la documentación de cada componente.
+- El panel solar cuenta con 10 años de garantía en defectos de fabricación y 25 años garantía de producción mínima del 80%.
+- La estructura de soporte de aluminio cuenta con una garantía del fabricante de 20 años.
+- La mano de obra está garantizada por 5 años, esto es que calidad de la instalación cumpla con las normas vigentes.
+
+
+#+html: </div></div><hr/>
+* Cotización para Roberto Galarza
+:PROPERTIES:
+:EXPORT_FILE_NAME: rgs
+:EXPORT_HUGO_SECTION: cotiza
+:END:
+** Panel Solar - Roberto G. S.
+*** Cómo Definimos Esta Propuesta
+#+html: <div class="columnas"><div class="junto">
+**** Datos sobre esta cotización
+- Fecha :: <2020-01-19 dom>
+- Dirección ::  Fraccionamiento Cantanas
+
+**** Descripción del requerimiento
+Poner paneles considerando el consumo eléctrico de una nueva construcción y demanda eléctrica estimada.
+
+**** ¿Cuántos Paneles Instalar?
+La cantidad de panel solar recomendada, es en base a lo siguiente:
+- Cálculo estimado de consumo eléctrico por uso de los climas
+- Pago a CFE de casas de dimensiones similares por el rumbo (Billy)
+
+**** Consumo eléctrico estimado por uso de los climas
+
+#+html: <style type="text/css">.tabla-estim tr {border-bottom: 1px solid red;}</style>
+#+caption: Consumo estimado por los Climas
+#+attr_html: :class tabla-estim bold-ultima-linea
+|                |    <c>     |   <c>    |  <c>   |  <c>  |   <r> |
+| Sección        | Tons Clima |   Tipo   |  Uso   | Horas |   Kwh |
+| Recamaras      |    9.0     | Inverter | Diario |   8   | 1,377 |
+| Sala-Comedor   |    4.0     | Inverter | Semana |   4   |    48 |
+| Sótano         |    6.0     | Inverter |  Mes   |  15   |    56 |
+| Rec. Visitas   |    1.0     | Inverter |  Mes   |  24   |    15 |
+| Cocina         |    3.0     | Inverter | Diario |   4   |   270 |
+| Sala de t.v.   |    1.0     | Inverter | Semana |   8   |    22 |
+|----------------+------------+----------+--------+-------+-------|
+| Consumo Climas |            |          |        |       | 1,787 |
+| Consumo Otros  |            |          |        |       | 1,000 |
+| TOTAL CONSUMO  |   VERANO   |          |        |       | 2,787 |
+
+#+html: </div><div class="junto">
+
+**** Uso de los Climas Varía por mes
+
+#+attr_html: :alt Variación en el uso de climas
+#+caption: El costo de climatización varia por mes
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/roberto-galarza/uso-climas-por-mes.png
+
+**** Cuanta Energía se Consume al Año y La Tarifa DAC
+
+#+caption: Consumo estimado por los Climas
+#+attr_html: :class bold-ultima-linea
+|  <c>  |    <c>     |     <r> |      <r> |      <r> |      <r> |
+|   A   | Cliamas Al | Consumo | Lim. DAC | Subsidio | Producir |
+|  Ene  |    40%     |   1,715 |      850 |      175 |    1,540 |
+|  Feb  |    30%     |   1,536 |      850 |      175 |    1,361 |
+|  Mar  |    20%     |   1,357 |      850 |      175 |    1,182 |
+|  Abr  |    50%     |   1,894 |      850 |      450 |    1,444 |
+|  May  |    80%     |   2,430 |      850 |      450 |    1,980 |
+|  Jun  |    100%    |   2,787 |      850 |      450 |    2,337 |
+|  Jul  |    100%    |   2,787 |      850 |      450 |    2,337 |
+|  Ago  |    80%     |   2,430 |      850 |      450 |    1,980 |
+|  Sep  |    50%     |   1,894 |      850 |      450 |    1,444 |
+|  Oct  |    20%     |   1,357 |      850 |      175 |    1,182 |
+|  Nov  |    20%     |   1,357 |      850 |      175 |    1,182 |
+|  Dic  |    35%     |   1,625 |      850 |      175 |    1,450 |
+|-------+------------+---------+----------+----------+----------|
+| Anual |    52%     |  23,169 |   10,200 |    3,750 |   19,419 |
+
+La cantidad que conviene producir es aproximadamente 20,000 kWh.
+
+#+html: </div></div><hr/>
+*** Propuesta Detalle
+
+#+html: <div class="columnas"><div class="junto">
+**** Características del equipo propuesto
+- Panel :: 46 módulos de 405 watts proveedor certificado Tier 1
+- Inversor :: 2 unidades, marca SMA - Proveedor Alemán, 10 años de garantía
+- Estructura :: Aluminio
+- Generación :: De 19,000* a 25,000 kWh al año con una variación aceptable del 10% por condiciones del clima.
+
+**** Pago estimado por consumo eléctrico
+
+#+caption: Gasto Proyectado de Energía Eléctrica
+#+attr_html: :class bold-ultima-linea moneda-4
+|  <c>  | <c> |   <r> |     <r> |
+|  De   |  A  |   Uso | Consumo |
+|  Ene  | Feb | 3,251 |  17,005 |
+|  Mar  | Abr | 3,251 |  17,005 |
+|  May  | Jun | 5,217 |  27,227 |
+|  Jul  | Ago | 5,217 |  27,227 |
+|  Sep  | Oct | 3,251 |  17,005 |
+|  Nov  | Dic | 2,983 |  15,611 |
+|-------+-----+-------+---------|
+| Anual |     |       | 121,081 |
+
+Con los paneles solares y con el consumo eléctrico según aquí estimado, el gasto por CFE bajaría a menos de $20,000 anuales.
+
+#+html: </div><div class="junto">
+
+**** Inversión
+
+#+caption: Costo llave en mano del proyecto
+#+attr_html: :class bold-ultima-linea moneda-1 moneda-2
+| PRECIO PANEL SOLAR | USD*   | MXP     |
+| Fotovoltaico       | 16,332 | 307,858 |
+| Instalación        |        | 108,145 |
+| Suma               |        | 416,003 |
+| Descuento          |        | -20,003 |
+| Subtotal           |        | 396,000 |
+| iva 16%            |        | 63,360  |
+| TOTAL              |        | 459,360 |
+
+
+Material importado en usd a tipo de cambio de $18.85 ±20 centavos.
+
+#+html: </div></div><hr/>
+
+*** Acomodo del Paneles Solar
+
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/roberto-galarza/en-perspectiva.png
+
+*** Tipo de Instalación
+#+html: <div class="columnas">
+**** En el techo sobre la escalera
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/roberto-galarza/demo-ecofoot2p.jpeg
+
+
+Estructura importada (donde no se perfora el techo),  probada contra vientos y de poca inclinación para que no se vea desde abajo y minimizar resistencia al viento.
+
+#+html: <div class="lg:mt-20">
+**** En el techo al frente de la casa
+#+html: </div>
+
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/roberto-galarza/muestra-plancha.png
+
+Estructura de aluminio sobre bloques de cemento (para no perforar el techo).
+#+html: </div><hr/>
+*** Condiciones Comerciales
+
+#+html: <div class="columnas"><div class="junto">
+**** Tipo de cambio
+- El precio es en pesos para esta cotización y queda establecido en base al precio en el Diario Oficial de la Federación el día de pago del anticipo.
+- Si el tipo de cambio sufre un aumento o disminución mayor de 20 centavos, el precio total de proyecto se ajustará.
+
+**** Forma de pago
+- Anticipo del 40% al inicio del proyecto al tiempo de la firma del contrato.
+- 40% adicional contra entrega de los componentes fotovoltaicos (dos semanas).
+- 20% de pago final cuando se termine con la instalación del panel solar y entregada la documentación requerida para el contrato con CFE. 
+
+El tiempo que llevan los trámites para el cambio de medidor está fuera de nuestro control y es aparte. 
+
+**** Tiempos de entrega
+- La entrega del equipo fotovoltáico tarda 15 días hábiles a partir de la entrega de anticipo y firma de contrato compra-venta.
+- La instalación de panel solar, tarda tres semanas normalmente (según el clima lo permita),  partir de la entrega de los materiales.
+
+#+html: </div><div class="junto">
+  
+**** Sobre garantías
+- Los componentes que se entregan son nuevos y cuentan con la garantía de fábrica propia de cada componentes.
+- Al final del proyecto se hace entrega de la documentación de cada componente.
+- El panel solar cuenta con 10 años de garantía en defectos de fabricación y 25 años garantía de producción mínima del 80%.
+- La estructura de soporte de aluminio cuenta con una garantía del fabricante de 20 años.
+- La mano de obra está garantizada por 5 años, esto es que calidad de la instalación cumpla con las normas vigentes.
+**** Garantía extendida incluida
+- *Como cobertura de garantía extendida por dos años:* Queda cubierto adicionalmente que cualquier falla en los componentes, según se detecte en el sistema de monitoreo, será inspeccionado y corregido sin costo de mano de obra.
+- Posteriormente, los componentes principales continúan con su garantía original de fábrica y el usuario es responsable de reportar y conseguir hacer efectiva la garantía directo con el fabricante en caso necesario, así como la contratación de la mano de obra del trabajo de reparación.
+- Opcional se ofrecerán contratos para ampliar la cobertura de garantía extendida y mantenimiento,  por un costo aproximado $250/módulo fotovoltaico (por definir).
+
+#+html: </div></div>
+
+
+#+html: </div></div><hr/>
+* Cotización para Ind. Natalia
+:PROPERTIES:
+:EXPORT_FILE_NAME: franco-g
+:EXPORT_HUGO_SECTION: cotiza
+:END:
+** Panel Solar - Oficinas Amazonas
+*** Cómo Definimos Esta Propuesta
+#+html: <div class="columnas"><div class="junto">
+**** Datos sobre esta cotización
+- Fecha :: <2020-01-21 mar>
+- Dirección ::  Calle Amazonas, San Pedro G.G. NL
+
+**** Descripción del requerimiento
+Poner paneles según el consumo eléctrico estimado.
+
+**** ¿Cuántos Paneles Instalar?
+La cantidad de panel solar recomendada es en base a los climas y refrigeradores, y su consumo eléctrico estimado según el uso en verano.
+
+#+html: </div><div class="junto">
+
+**** Consumo eléctrico estimado por uso de los climas
+
+#+caption: Consumo estimado por los Climas
+#+attr_html: :class tabla-estim
+|                  |    <c>     |   <c>    |  <c>   |  <c>  | <r> |
+| Sección          | Tons Clima |   Tipo   |  Uso   | Horas | Kwh |
+| 5 Climas de una. |    5.0     | Inverter | Diario |  10   | 990 |
+| Clima            |    2.0     | Inverter | Diario |  10   | 396 |
+
+#+caption: Consumo estimado total
+#+attr_html: :class tabla-estim bold-ultima-linea
+|                            |        <r> |
+| Concepto                   | kWh al Mes |
+| Consumo Climas Verano      |      1,386 |
+| Refrigeradores Comerciales |        288 |
+| Consumo Normal Iluminación |        500 |
+| Consumo Mes Max Verano     |      2,174 |
+
+#+html: </div></div><hr/>
+
+**** Uso de los Climas Varía por mes
+
+#+html: <div class="columnas"><div class="junto">
+
+#+attr_html: :alt VarÍA el uso de climas por mes
+#+caption: El costo de climatización varia por mes
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/roberto-galarza/uso-climas-por-mes.png
+
+La cantidad que conviene producir es aproximadamente:
+- 13,000 kWh anuales para maximizar ahorro y seguir aprovechando el subsidio.
+- Más de 7,000 kHw para caer en la tarifa DAC (de alto consumo).
+
+#+html: </div><div class="junto">
+**** Cuanta Energía se Consume al Año y La Tarifa DAC
+
+#+caption: Consumo Eléctrico Estimado Por Mes
+#+attr_html: :class bold-ultima-linea
+|  <c>  |    <c>     |     <r> |      <r> |      <r> |      <r> |
+|   A   | Cliamas Al | Consumo | Lim. DAC | Subsidio | Producir |
+|  Ene  |    40%     |   1,170 |      850 |      175 |      995 |
+|  Feb  |    30%     |   1,002 |      850 |      175 |      827 |
+|  Mar  |    20%     |     835 |      850 |      175 |      660 |
+|  Abr  |    50%     |   1,337 |      850 |      450 |      887 |
+|  May  |    80%     |   1,839 |      850 |      450 |    1,389 |
+|  Jun  |    100%    |   2,174 |      850 |      450 |    1,724 |
+|  Jul  |    100%    |   2,174 |      850 |      450 |    1,724 |
+|  Ago  |    80%     |   1,839 |      850 |      450 |    1,389 |
+|  Sep  |    50%     |   1,337 |      850 |      450 |      887 |
+|  Oct  |    20%     |     835 |      850 |      175 |      660 |
+|  Nov  |    20%     |     835 |      850 |      175 |      660 |
+|  Dic  |    35%     |   1,086 |      850 |      175 |      911 |
+|-------+------------+---------+----------+----------+----------|
+| Anual |    63%     |  16,463 |   10,200 |    3,750 |   12,713 |
+
+#+html: </div></div><hr/>
+*** Propuesta Detalle
+
+#+html: <div class="columnas"><div class="junto">
+**** Dos propuestas de panel solar recomendadas: 
+- Un panel para ahorrar invirtiendo lo menos, recomendable para no caer en la tarifa DAC,  con 18 módulos.
+- Otra propuesta donde con 24 módulos se maximiza el ahorro produciendo solo lo suficiente para seguir aprovechando la energía con subsidio.
+
+Que los paneles sean suficientes para el consumo eléctrico depende de los hábitos de uso.  Los valores aquí presentados son un aproximado.
+
+#+html: </div><div class="junto">
+**** Características del equipo propuesto
+- Panel :: 18 ó 24 módulos de 405 watts proveedor calificado como Tier 1 por Bloomberg Finnancial
+- Inversor :: Inversor económico 5 años de garantía con Mejora Opcional: Inversor Alemán* 10 años de garantía
+- Sistema de Monitoreo :: Sistema incluído para conectarse al internet localmente disponible.
+- Estructura :: Aluminio anclada sobre bloques de concreto como contrapeso para no perforar el techo
+- Generación :: 24 páneles de 10,000 a 13,900 kWh al año y 18 paneles de 7,600 a 10,400 kWh al año
+- Trámite ante CFE :: Incluido hasta la realización del contrato.
+
+#+html: </div></div><hr/>
+#+html: <div class="columnas"><div class="junto">
+
+**** Pago estimado por consumo eléctrico
+
+#+caption: Gasto Proyectado de Energía Eléctrica
+#+attr_html: :class bold-ultima-linea moneda-1
+|  <c>  | <c> |   <r> |       <r> |
+|  De   |  A  |   Uso | Cobro CFE |
+|  Ene  | Feb | 2,172 |    11,393 |
+|  Mar  | Abr | 2,172 |    11,393 |
+|  May  | Jun | 4,013 |    20,969 |
+|  Jul  | Ago | 4,013 |    20,969 |
+|  Sep  | Oct | 2,172 |    11,393 |
+|  Nov  | Dic | 1,921 |    10,088 |
+| Anual |     |       |    86,205 |
+
+La tarifa aplicable, es la tarifa DAC, sin subsidio porque supera el consumo mensual promedio a los 850kWh.
+
+#+html: </div><div class="junto">
+**** Inversión
+
+#+caption: Costo llave en mano del proyecto
+#+attr_html: :class bold-ultima-linea moneda-1 moneda-2 moneda-3 moneda-4
+| PRECIO PANEL SOLAR   | 18-USD | 18-MXP  | 24-USD | 24-MXP  |
+| Fotovoltaico         | 6,293  | 118,623 | 8,300  | 156,462 |
+| Instalación          |        | 38,844  |        | 53,318  |
+| SubTotal Panel Solar |        | 157,467 |        | 209,779 |
+
+El tipo de cambio de $18.85 ±20 centavos.
+
+#+caption: Costo adicional por Mejora Opcional
+#+attr_html: :class bold-ultima-linea moneda-1 moneda-2 moneda-3 moneda-4
+| PRECIO MEJORA         | 18-USD | 18-MXP | 24-USD | 24-MXP |
+| Inversor SMA (Alemán) | 779.42 | 14,692 | 910.93 | 17,171 |
+
+Inversor Alemán adicionalmente cuenta con suministro de emergencia en caso de emergencia, para conectar una extensión (hasta 2,000 watts). 
+
+#+html: </div></div><hr/>
+
+*** Acomodo del Paneles Solar
+
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/roberto-galarza/muestra-plancha.png
+
+Estructura de aluminio sobre bloques de cemento (para no perforar el techo).
+
+Revisando los planos si hay suficiente espacio.
+
+*** Condiciones Comerciales
+#+html: <hr/>
+#+html: <div class="columnas"><div class="junto">
+**** Tipo de cambio
+- El precio es en pesos para esta cotización y queda establecido en base al precio en el Diario Oficial de la Federación el día de pago del anticipo.
+- Si el tipo de cambio sufre un aumento o disminución mayor de 20 centavos, el precio total de proyecto se ajustará.
+
+**** Forma de pago
+- Anticipo del 35% al inicio del proyecto al tiempo de la firma del contrato.
+- 45% adicional contra entrega de los componentes fotovoltaicos (dos semanas).
+- 20% de pago final cuando se termine con la instalación del panel solar y entregada la documentación requerida para el contrato con CFE. 
+
+El tiempo que llevan los trámites para el cambio de medidor está fuera de nuestro control y es aparte. 
+
+**** Tiempos de entrega
+- La entrega del equipo fotovoltáico tarda 15 días hábiles a partir de la entrega de anticipo y firma de contrato compra-venta.
+- La instalación de panel solar, tarda tres semanas normalmente (según el clima lo permita),  partir de la entrega de los materiales.
+
+#+html: </div><div class="junto">
+  
+**** Sobre garantías
+- Los componentes que se entregan son nuevos y cuentan con la garantía de fábrica propia de cada componentes.
+- Al final del proyecto se hace entrega de la documentación de cada componente.
+- El panel solar cuenta con 10 años de garantía en defectos de fabricación y 25 años garantía de producción mínima del 80%.
+- La estructura de soporte de aluminio cuenta con una garantía del fabricante de 20 años.
+- La mano de obra está garantizada por 5 años, esto es que calidad de la instalación cumpla con las normas vigentes.
+**** Garantía extendida incluida
+- *Como cobertura de garantía extendida por dos años:* Queda cubierto adicionalmente que cualquier falla en los componentes, según se detecte en el sistema de monitoreo, será inspeccionado y corregido sin costo de mano de obra.
+- Posteriormente, los componentes principales continúan con su garantía original de fábrica y el usuario es responsable de reportar y conseguir hacer efectiva la garantía directo con el fabricante en caso necesario, así como la contratación de la mano de obra del trabajo de reparación.
+- Opcional se ofrecerán contratos para ampliar la cobertura de garantía extendida y mantenimiento,  por un costo aproximado $250/módulo fotovoltaico (por definir).
+
+#+html: </div></div>
+
+
+#+html: </div></div><hr/>
+* Cotización Panel Solar Hugo Balderas
+:PROPERTIES:
+:EXPORT_FILE_NAME: hugo-b
+:EXPORT_HUGO_SECTION: cotiza
+:END:
+** Cotización Paneles para Hugo B.
+
+** Sobre Esta Propuesta
+#+html: <div class="lg:flex"><div class="lg:flex-auto">
+*** Datos sobre esta cotización
+- Fecha :: <2020-01-30 jue>
+- Dirección ::  Colonia Alta Vista, Monterrey NL
+#+html: </div><div class="lg:flex-auto lg:mx-10">
+*** Descripción del requerimiento
+Poner paneles para ahorrar en el consumo eléctrico
+#+html: </div></div><hr/>
+** Acomodo de los paneles solares
+Se pueden colocar 10 módulos fotovoltaicos sin problema.
+
+#+html: <div class="lg:flex"><div class="lg:flex-auto">
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/hugo-balderas/hugo2.png
+
+#+html: </div><div class="lg:flex-auto lg:mx-10">
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/hugo-balderas/hugo3.png
+
+#+html: </div><div class="lg:flex-auto">
+file:///home/rolo/Private/elemento/APaneles/Prospectos/2020/static/resources/hugo-balderas/hugo1.png
+
+#+html: </div></div><hr/>
+
+** Propuesta Detalle
+
+#+html: <div class="columnas"><div class="junto">
+*** ¿Cuántos Paneles Instalar?
+
+Considerando el espacio disponible y el gasto en el consumo eléctrico, se presentan dos opciones.
+
+Partiendo del consumo eléctrico real del recibo de CFE del 18/Jun al 20/Ago de 2019 que fue de 1,585 KWh se pagó $3,206.
+
+Con la primera propuesta de 8 paneles, la generación de energía en ese período habría sido: 650 kWh[fn:1] y se obtendría *un ahorro de $2,171 (68%).*
+
+Con la segunda propuesta de 10 paneles, la generación de energía en ese período habría sido: 815 kWh[fn:1] y se obtendría un ahorro de $2,450 (76%).
+
+#+html: </div><div class="junto">
+
+*** Características
+- Panel :: 8 ó 10 módulos de 330 watts proveedor calificado como Tier 1 por Bloomberg Finnancial
+- Inversor :: Tipo micro-inversores.  Necesario por el acomodo con diversas orientaciones. 10 años de garantía.
+- Sistema de Monitoreo :: Sistema incluido y se conecta al internet de la casa.
+- Estructura :: Aluminio 
+- Trámite ante CFE :: Incluido hasta la realización del contrato.
+
+#+html: </div></div><hr/>
+** Inversión y Condiciones Comerciales
+#+html: <div class="columnas"><div class="junto "><div class="-mt-6">
+**** Inversión
+#+html: </div>
+#+caption: Costo llave en mano del proyecto
+#+attr_html: :class bold-ultima-linea moneda-1 moneda-2 moneda-3 moneda-4
+| PRECIO PANEL SOLAR   | 8-USD | 8-MXP  | 10-USD | 10-MXP |
+| Fotovoltaico         | 2,528 | 47,653 | 3,186  | 60,056 |
+| Instalación          |       | 32,094 |        | 35,990 |
+| SubTotal Panel Solar |       | 79,747 |        | 96,046 |
+El tipo de cambio de $18.85 ±20 centavos.
+**** Tipo de cambio
+- El precio es en pesos para esta cotización y queda establecido en base al precio en el Diario Oficial de la Federación el día de pago del anticipo.
+- Si el tipo de cambio sufre un aumento o disminución mayor de 20 centavos, el precio total de proyecto se ajustará.
+#+html: </div><div class="junto">
+**** Forma de pago
+- Anticipo del 40% al inicio del proyecto al tiempo de la firma del contrato.
+- 40% adicional contra entrega de los componentes fotovoltaicos (dos semanas).
+- 20% de pago final cuando se termine con la instalación del panel solar y entregada la documentación requerida para el contrato con CFE. 
+
+El tiempo que llevan los trámites para el cambio de medidor está fuera de nuestro control y es aparte. 
+
+**** Tiempos de entrega
+- La entrega del equipo fotovoltáico tarda 15 días hábiles a partir de la entrega de anticipo y firma de contrato compra-venta.
+- La instalación de panel solar, tarda tres semanas normalmente (según el clima lo permita),  partir de la entrega de los materiales.
+
+#+html: </div></div><hr/>
+*** GARANTÍA
+#+html: <div class="columnas"><div class="junto">
+**** Garantía de Fábrica y de Calidad
+- Los componentes que se entregan son nuevos y cuentan con la garantía de fábrica propia de cada componentes.
+- Al final del proyecto se hace entrega de la documentación de cada componente.
+- El panel solar cuenta con 10 años de garantía en defectos de fabricación y 25 años garantía de producción mínima del 80%.
+- La estructura de soporte de aluminio cuenta con una garantía del fabricante de 20 años.
+- La mano de obra está garantizada por 5 años, esto es que calidad de la instalación cumpla con las normas vigentes.
+
+#+html: </div><div class="junto">
+
+**** Garantía extendida incluida
+Como cobertura de *garantía extendida por dos años:*
+- Queda cubierto adicionalmente que cualquier falla en los componentes, según se detecte en el sistema de monitoreo, será inspeccionado y corregido sin costo de mano de obra.
+- Posteriormente, los componentes principales continúan con su garantía original de fábrica y el usuario es responsable de reportar y conseguir hacer efectiva la garantía directo con el fabricante en caso necesario, así como la contratación de la mano de obra del trabajo de reparación.
+- Opcional se ofrecerán contratos para ampliar la cobertura de garantía extendida y mantenimiento,  por un costo aproximado $250/módulo fotovoltaico (por definir).
+
+#+html: </div></div>
+* Footnotes
+
+[fn:1] La generación de panel solar puede varía con las condiciones del clima 15%.
+

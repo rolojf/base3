@@ -1,0 +1,9 @@
+{{ $pasiva := .Site.Params.navega.pasiva }}
+{{- range .Site.Menus.main }}
+   <a class="menu__link {{- $pasiva -}} ml-4 mt-2 md:mt-0"
+      href="{{ .URL | absLangURL }}">
+      {{ .Name }}
+   </a>
+{{ end }}
+{{ partial "langs.html" . }}
+

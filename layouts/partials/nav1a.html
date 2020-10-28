@@ -1,0 +1,42 @@
+<nav x-data="{ open: false }" @keydown.window.escape="open = false">
+   <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 px-4 sm:px-0">
+         <div class="flex items-center">
+            <div class="flex-shrink-0">
+               <img class="h-8 w-8" src="/img/logos/workflow-mark-on-dark.svg" alt="" />
+            </div>
+            <div class="hidden md:block">
+               <div class="ml-10 flex items-baseline">
+                  {{ partial "lista-menu-nav.html" . }}
+               </div>
+            </div>
+         </div>
+         <div class="-mr-2 flex md:hidden">
+            <button
+               class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+               @click="open = !open"
+            >
+               <svg class="h-6 w-6" stroke="currentColor" fill="none" viewbox="0 0 24 24">
+                  <path
+                     class="inline-flex"
+                     :class="{'hidden': open, 'inline-flex': !open }"
+                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                  <path
+                     class="hidden"
+                     :class="{'hidden': !open, 'inline-flex': open }"
+                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     d="M6 18L18 6M6 6l12 12"
+                  ></path>
+               </svg>
+            </button>
+         </div>
+      </div>
+   </div>
+   <div x-show="open" @click.away="open = false" class="border-b border-gray-700 md:hidden">
+      <div class="px-2 py-3 sm:px-3 flex flex-col">
+         {{ partial "lista-menu-nav.html" . }}
+      </div>
+   </div>
+</nav>

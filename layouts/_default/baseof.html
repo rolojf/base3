@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ .Language }}">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>
+         {{ block "title" . }} {{ if not .IsHome }} {{ .Title }} - {{ end }} {{ .Site.Title }} {{ end }}
+      </title>
+      {{ partial "metas.html" . }}
+      {{ if .Site.Params.opengraph }} {{ template "_internal/opengraph.html" . }} {{ end }}
+      {{ if .Site.Params.twitter_cards }} {{ template "_internal/twitter_cards.html" . }} {{ end }}
+      {{- if not .Site.IsServer }}
+         {{ if .Site.Params.g_analytics }} {{ template "_internal/google_analytics_async.html" . }} {{ end }}
+      {{- end }}
+      {{ partial "stylesheets.html" . }}
+      <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+      {{ partial "hscripts2.html" . }}
+   </head>
+   <body>
+      {{ block "cuerpo" . }}
+      {{ end }}
+      {{ partial "tscripts.html" . }}
+   </body>
+</html>

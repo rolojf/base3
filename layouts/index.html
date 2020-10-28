@@ -1,0 +1,28 @@
+{{ define "cuerpo" }}
+   <div class="pb-24" id="difumina">
+      {{ partial "nav1a.html" . }}
+      {{ partial "cabeza.html" . }}
+   </div>
+   <div class="flex flex-col">
+      <main class="-mt-32 z-20" role="main">
+         <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow py-6 px-5 sm:px-6">
+               <div class="lg:grid lg:grid-cols-3 lg:gap-4 xl:grid-cols-4 xl:gap-6">
+                  <div class="lg:col-span-2 xl:col-span-3">
+                     {{ .Content }}
+                  </div>
+                  {{ partial "sidebar.html" . }}
+               </div>
+               {{ $secciones := default .Site.Params.mainSections .Params.mainSections }}
+               {{ $paginas := where .Site.RegularPages "Type" "in" $secciones }}
+               {{ partial "lista-resumen.html" $paginas }}
+               {{ partial "formulario.html" . }}
+            </div>
+         </div>
+   </div>
+      </main>
+      <footer class="z-0">
+         {{ partial "pie.html" . }}
+      </footer>
+   </div>
+{{ end }}

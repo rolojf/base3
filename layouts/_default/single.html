@@ -1,0 +1,25 @@
+{{ define "cuerpo" }}
+   <div>
+      <div class="pb-24" id="difumina">
+         {{ partial "nav2.html" . }}
+         {{ partial "cabeza.html" . }}
+      </div>
+      <div class="flex flex-col">
+         <main class="-mt-32 z-20" role="main">
+            <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+               <div class="bg-white rounded-lg shadow py-6 px-5 sm:px-6">
+                  <div class="flex flex-col-reverse md:block">
+                     {{ partial "sidebar.html" . }}
+                     <div>
+                        {{ .Content }}
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+         <footer class="z-0">
+            {{ partial "pie.html" . }}
+         </footer>
+      </div>
+   </div>
+{{ end }}

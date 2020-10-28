@@ -1,0 +1,53 @@
+<div class="la-base-modal"
+     x-show.transition="retar"
+     x-cloak
+     >
+   <div class="mm-fondo"
+        >
+      <h3 class="mm-titulo">
+         {{ T "conf_title" }}
+      </h3>
+      <p class="mm-explic">
+         {{ T "permit_conf" }}
+      </p>
+      <div class="mm-fondo-reto">
+         <p class="mm-reto"
+            x-on:keydown.escape.window="resetVal"
+         > {{ T "ask_add" }}
+         </p>
+         <div class="mm-acomodo-ecuacion">
+            <p id="ecuacion"
+               class="flex items-center"
+            >
+               <p>
+                  7 +
+               </p>
+               <label for="valor"
+                      class="sr-only"
+               >
+                  {{ T "val_conf" }}
+               </label>
+               <input id="valor"
+                      type="tel"
+                      class="mm-campo"
+                      placeholder="?"
+                      x-model="queContesta"
+                      x-on:input="checaResp"
+                      x-ref="retoResp"
+                      >
+               <p>= 11</p>
+         </div>
+         <div class="mt-3 pl-6">
+            <h3 :class="avisoClase1">
+               {{ T "aviso_falla_1" }}
+            </h3>
+            <h3 :class="avisoClase2">
+               {{ T "aviso_falla_2" }}
+            </h3>
+            <h3 :class="avisoClase3">
+               {{ T "aviso_falla_3" }}
+            </h3>
+         </div>
+      </div>
+   </div>
+</div>

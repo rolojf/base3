@@ -1,0 +1,20 @@
+{{- $recent := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{- $recent_num := (.Site.Params.widgets.recent_num | default 8) }}
+
+{{- if $recent }}
+   <div class="mt-8">
+      <h3 class="px-3 text-sm leading-4 font-semibold text-gray-500 uppercase tracking-wider">
+         {{ T "recent_title" }}
+      </h3>      
+      <nav>
+            {{- range first $recent_num $recent }}
+               <a href="{{ .RelPermalink }}"
+                  class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+                  <span class="truncate">
+                     {{ .Title }}
+                  </span>
+               </a>
+            {{- end }}
+      </nav>
+   </div>
+{{- end }}

@@ -1,0 +1,43 @@
+{{/* INTEGRAR JAVASCRIPT */}}
+{{ printf "<!-- Este es partials/hscripts2.html -->" | safeHTML }}
+{{ $opjsb := dict "targetPath" "js/main.js"}}
+{{ if hugo.IsProduction }}
+   {{ $opjsb = dict "targetPath" "js/main.js" "minify" true }}
+   {{ $inicialjs := resources.Get "js/hscripts.js" | js.Build $opjsb | resources.Fingerprint}}
+   <script type="text/javascript"
+           src="{{ $inicialjs.RelPermalink }}"
+           integrity="{{ $inicialjs.Data.Integrity }}"
+           crossorigin="anonymous"
+           defer>
+   </script>
+{{ else }}
+   {{ $inicialjs := resources.Get "js/hscripts.js" | js.Build $opjsb }}
+   <script type="text/javascript"
+           src="{{ $inicialjs.RelPermalink }}"
+           defer>
+   </script>
+{{ end  }}
+
+{{/* INTEGRAR ELM */}}
+{{ $vaElm := $.Param "elm" }}
+{{ if ne $vaElm "noelm" }}
+   {{ if hugo.IsProduction }}
+      {{ $jsNombre := printf "elm/%s.elm.min.js" $vaElm }}
+      {{ printf "<!-- El archivo es elm head en producción es:  %s -->" $jsNombre | safeHTML }}
+      {{ $elmjsFile := resources.Get $jsNombre | resources.Fingerprint }}
+      <script type="text/javascript"
+              src="{{ $elmjsFile.RelPermalink }}"
+              integrity="{{ $elmjsFile.Data.Integrity }}"
+              crossorigin="anonymous"
+              defer>
+      </script>
+   {{ else }}
+      {{ $jsNombre := printf "elm/%s.js" $vaElm }}
+      {{ printf "<!-- El archivo es elm head en dev es:  %s -->" $jsNombre | safeHTML }}
+      {{ $elmjsFile := resources.Get $jsNombre }}
+      <script type="text/javascript"
+              src="{{ $elmjsFile.RelPermalink }}"
+              defer>
+      </script>
+   {{ end }}
+{{ end }}

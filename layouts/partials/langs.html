@@ -1,0 +1,9 @@
+{{ if .IsTranslated }}
+   {{ range (first 1 .Translations) }}
+      <a class="text-yellow-200 menu__link block ml-4 mt-2 md:mt-0"
+         href="{{ .RelPermalink }}"
+      >
+         {{ i18n "traducido" }}
+      </a>
+   {{ end }}
+{{ end }}

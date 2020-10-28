@@ -1,0 +1,24 @@
+#+hugo_base_dir: ../
+#+hugo_section: /
+#+hugo_level_offset: 1
+* Título de headline en orgmode home                         :unoTag:@unoCat:
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_SECTION*: es
+:END:
+** Este sería el primer headline                            :dosTag:@dosCat:
+Se supone que el contenido de la página principal aquí se escribe
+#+HTML: <div id="valida"></div>
+* Title headline in org mode                                :oneTag:@oneCat:
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_SECTION*: en
+:END:
+** This is the first headline                               :twoTag:@twoCat:
+Let's see if it goes well, here I expect to see the english part
+#+HTML: id="valida"></div>
+
+
+
+
+

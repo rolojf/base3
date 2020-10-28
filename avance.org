@@ -1,0 +1,16 @@
+* Plan para mi NAVBAR
+Idealmente que sea puro css
+Para maximizar el espacio /above the fold/ que no robe espacio.
+En el footer pienso poner el menú y demás mamadas relacionadas.
+** TODO El navbar que sea solo un botón con el logo y una leyenda que invite a ver más detalles abajo.
+** TODO Que permanezca como sticky button
+** TODO Implantar funcionalidad soft-scroll
+Al presionar el botón, scrollee (preferentemente suave) abajo
+Puede usarse con no tan buena acpetación pero ni hablar:
+#+begin_src css
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+   html { scroll-behavior: auto; }
+   }
+#+end_src
+[[https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior][leer más]]

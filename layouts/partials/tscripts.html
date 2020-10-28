@@ -1,0 +1,38 @@
+{{ printf "<!-- Este es partials/tscripts.html -->" | safeHTML }}
+{{/* Simple Call */}}
+{{ $simple := resources.Get "js/simple.js" }}
+{{ if hugo.IsProduction }}
+   {{ $simple = $simple | resources.Minify | resources.Fingerprint "md5"}}
+   <script type="text/javascript"
+           src="{{ $simple.RelPermalink }}"
+           integrity="{{ $simple.Data.Integrity }}"
+           crossorigin="anonymous"
+           defer>
+   </script>
+{{ else }}
+   <script type="text/javascript"
+           src="{{ $simple.RelPermalink }}"
+           defer>
+   </script>
+{{ end }}
+
+{{/* Elm Call */}}
+{{ $jselm := $.Param "elm" }}
+{{ printf "<!-- Este es lo elm a inlcuir del tscripts.html = %s -->" $jselm | safeHTML }}
+{{ if ne $jselm "noelm" }}
+   {{ if hugo.IsProduction }}
+      {{ $jsNombre := printf "js/%s.js" $jselm | }}
+      {{ $jsFileDeElm = resources.Get $jsNombre | resources.Minify | resources.Fingerprint }}
+      <script type="text/javascript"
+              src="{{ $jsFileDeElm.RelPermalink }}"
+              integrity="{{ $jsFileDeElm.Data.Integrity }}"
+              crossorigin="anonymous">
+      </script>
+   {{ else }}
+      {{ $jsNombre := printf "js/%s.js" $jselm }}
+      {{ $jsFileDeElm := resources.Get $jsNombre }}
+      <script type="text/javascript"
+              src="{{ $jsFileDeElm.RelPermalink }}">
+      </script>
+   {{ end }}
+{{ end }}

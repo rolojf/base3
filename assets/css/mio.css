@@ -1,0 +1,346 @@
+.mio {
+  @apply text-lg text-gray-900 leading-normal;
+
+  & > * + *,  & li + li, & li > p + p {
+    @apply mt-6;
+  }
+
+/* variantes del texto */
+  strong {
+    @apply font-semibold;
+  }
+
+  strong a {
+    @apply font-bold;
+  }
+
+  small {
+    @apply text-sm;
+  }
+
+  var, em, i {
+    @apply italic;
+  }
+
+  del, s {
+    text-decoration: line-through;
+  }
+  
+  ins, u {
+    text-decoration: underline;
+  }
+
+  sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    @apply text-xs;
+  }
+
+  sup {
+    top: -.5em;
+  }
+
+  sub {
+    bottom: -.25em;
+  }
+
+  dt, strong, b {
+    @apply font-semibold;
+  }
+
+  pre, code, kbd, samp, var, output {
+    @apply font-mono text-sm;
+  }
+  
+  pre {
+    @apply pl-4 leading-snug border-l border-solid border-green-300 overflow-auto;
+
+    code {
+      background: none;
+      border: 0;
+      line-height: 24px;
+      padding: 0;
+    }
+  }
+  
+  code, kbd {
+    @apply text-green-200 rounded text-blue-800 leading-none py-1 px-2 inline-block;
+  }
+  
+  kbd {
+    @apply text-green-300 text-white;
+  }
+  
+  mark {
+    @apply text-yellow-400 py-0 px-1;
+  }
+  
+  pre {  /* del remedy */
+    white-space: pre-wrap;
+  }
+
+/* diferentes elementos del texto */
+
+  a {
+    text-decoration: none;
+    @apply text-blue-500 font-semibold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  hr {
+    height: 0;
+    overflow: visible;
+    @apply my-6 border-gray-700 border-dotted border-b;
+  }
+
+  figcaption {
+    @apply text-purple-500;
+
+      p {
+        text-align: center;
+        @apply text-sm;
+      }
+  }
+
+  caption, figcaption, 
+  label, legend { 
+    line-height: 1.375; 
+  }  /* del remedy */
+
+/* Headings */
+  h1 {
+    @apply text-4xl mb-6 mt-12 leading-loose font-bold;
+  }
+
+  h2 {
+    @apply leading-loose text-3xl font-bold text-gray-800 mt-5 uppercase tracking-wide;
+  }
+  
+  h3 {
+    @apply leading-relaxed text-xl font-semibold text-gray-900 mt-5 mb-2;
+  }
+
+  h4 {
+    @apply text-lg mb-5 mt-6 leading-normal font-semibold;
+  }
+
+  h5 {
+    @apply text-lg mb-4 font-bold mt-5 leading-snug font-medium;
+  }
+
+  h6 {
+    @apply text-base text-gray-600 font-bold uppercase mt-4 leading-tight
+  }
+
+  blockquote {
+    @apply border-l-4 border-gray-400 pl-4 italic;
+  }
+
+  ul, ol {
+    @apply pl-5;
+    @screen sm {
+      @apply pl-10;
+    }
+  }
+
+  p, ul, ol, dl, blockquote, pre,
+  table, form, fieldset, figure, address {
+    @apply mb-6;
+  }
+  
+  p {
+    @apply font-serif;
+  }
+  
+  section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50 * $em;
+  }
+  
+  aside {
+    float: right;
+    width: 285px;
+  }
+  
+  article, footer {
+    @apply p-10;
+  }
+  
+  article {
+    @apply border border-solid border-gray-800 bg-gray-900;
+  }
+  
+  ol, ul {
+    @apply ml-2;
+  }
+  
+  li {
+    dl, ol, ul {
+      margin-bottom: 0;
+    }
+  }
+
+  dl {
+    display: inline-block;
+  }
+  
+  dt {
+    @apply px-0 pt-5;
+  }
+  
+  dd {
+    @apply pl-4 py-1;
+  
+    &:last-of-type {
+      border-bottom: 2px solid #aaa;
+      @apply pb-3;
+    }
+  
+    + dt {
+      border-top: 1px dotted #aaa;
+      @apply pt-3;
+    }
+  }
+  
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  
+  img, svg, video, canvas {
+    height: auto;
+  }
+  
+  img {
+    margin: 0 auto;
+    border-style: none; 
+  }
+  
+  figure {
+    page-break-inside: avoid;
+    img {
+      display: block;
+    }
+  }
+  
+  audio { width: 100%; }
+
+/* Hide the overflow in IE 10 and earlier  remedy*/
+  svg { overflow: hidden; }
+
+/* Default block display on HTML5 elements  remedy*/
+  article, aside, figcaption, figure, footer,
+  header, hgroup, main, nav, section {
+    display: block;
+  }
+  
+  .columnas {
+    columns: 34rem 2;
+    column-rule: 1px dotted #000;
+    column-gap: 3em;
+    .junto {
+        h3, h4, h5, p {
+            margin-top: 0;}
+    }
+  }
+  
+  .junto {
+  -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+                 break-inside: avoid;
+  }
+  
+/* tables */
+  th {
+    @apply font-bold text-white bg-blue-500;
+  }
+  
+  td, th {
+    @apply py-3 px-4 align-middle;
+  }
+  
+  thead th {
+    @apply pb-2 border border-b border-gray-300 border-solid;
+  }
+  
+  table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 3px 2px;
+    background-color: #fff;
+    padding: 7px;
+    @apply font-mono text-base;
+
+    tr {
+      td,
+      th {
+          overflow: hidden;
+          @apply p-1;
+      }
+    }
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #eee;
+  }
+  
+  .bold-ultima-linea tbody tr:last-of-type {
+    @apply border-4  border-b border-blue-700 border-solid font-semibold;
+  }
+  
+  .moneda-1 tr {
+    td:nth-last-child(1) {
+    text-align: right;
+    }
+    td:nth-last-child(1)::before {
+        content: "$";
+        float: left;
+        padding-right: 7px;
+    }
+  }
+  .moneda-2 tr {
+    td:nth-last-child(2) {
+        text-align: right;
+    }
+    td:nth-last-child(2)::before {
+        content: "$";
+        float: left;
+        padding-right: 7px;
+    }
+  }
+  .moneda-3 tr {
+    td:nth-last-child(3) {
+        text-align: right;
+    }
+    td:nth-last-child(3)::before {
+        content: "$";
+        float: left;
+        padding-right: 7px;
+    }
+  }
+   .moneda-4 tr {
+       td:nth-last-child(4) {
+           text-align: right;
+       }
+       td:nth-last-child(4)::before {
+           content: "$";
+           float: left;
+           padding-right: 7px;
+       }
+   }
+   .moneda-5 tr {
+       td:nth-last-child(5) {
+           text-align: right;
+       }
+       td:nth-last-child(5)::before {
+           content: "$";
+           float: left;
+           padding-right: 7px;
+     }
+   }
+}

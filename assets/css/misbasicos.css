@@ -1,0 +1,40 @@
+:root:lang(en),       :not(:lang(en)) > :lang(en)             { quotes: '\201c' '\201d' '\2018' '\2019' } /* “ ” ‘ ’ */
+:root:lang(es),       :not(:lang(es)) > :lang(es)             { quotes: '\00ab' '\00bb' '\201c' '\201d' } /* « » “ ” */
+
+:root{
+  --highlight-color : #e22d30; 
+  --color-marco : 45, 55, 72
+/* gris original = 45, 55, 72
+   azul verdoso solarpaq 41, 183, 133*/
+}
+
+@media print {
+    * {color: black !important; background: transparent !important;}
+    .salta-pag {
+        page-break-after: always;
+    }
+}
+
+p:empty {
+   display: none;
+}
+
+@supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+
+html { font-family: 'Inter', sans-serif; }
+
+/* Info del marco */
+
+#difumina {
+  background-image: linear-gradient(rgba(var(--color-marco),1), rgba(var(--color-marco),0));
+}
+
+#difuminab {
+  background-image: linear-gradient(rgba(var(--color-marco),0), rgba(var(--color-marco),.92));
+}
+
+#difuminac {
+  background-image: linear-gradient(rgba(var(--color-marco),0.92), rgba(var(--color-marco),1));
+}

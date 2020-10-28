@@ -1,0 +1,180 @@
+* El contenido
+En especial se debe poner en el front matter:
+- el menú ya sea main ó secundario
+
+* Este repositorio es para desarrollo y prueba del theme
+Sin embargo el tema en sí, es un subtree apararte 
+* Redactar en bilingue
+En el menu aparece la opción de traducido si la hay.
+En general se establece
+
+#+begin_src org
+#+HUGO_BASE_DIR: ~/Private/elemento/websites/base2/
+#+end_src
+
+Y se documenta en sub encabezados los dos archivos poniendo para el de español
+#+begin_src org
+:PROPERTIES: 
+:EXPORT_FILE_NAME: voice-recording
+:EXPORT_HUGO_SECTION: /post/
+:END:
+#+end_src
+
+Asegurando que tiene el mismo nombre
+#+begin_src org
+:PROPERTIES: 
+:EXPORT_FILE_NAME: voice-recording
+:EXPORT_HUGO_SECTION: en/post/
+:END:
+#+end_src
+
+En caso de querer poner nombre diferente
+#+begin_src org
+:PROPERTIES: 
+:EXPORT_FILE_NAME: grabacion-de-voz
+:EXPORT_HUGO_SECTION: post
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :translationKey voice 
+:END:
+#+end_src
+
+Igual se pone el translationKey en inglés así se identifica que son uno pa'l otro.
+
+* El sidebar
+Toma del custom filed del frontmatter o del site
+una lista de widgets que desplegar en la página
+Widgets revisados:
+- Recent
+
+* Los menus
+Están predefinidos dos tipos de menu.
+El primario (llamado main) que es para la página principal y el secundario para las otras.
+
+** Para inlcuir una página en un menú
+Las páginas que queremos incluir en el menú, lo ponemos en el frontmatter así:
+#+begin_src org
+:PROPERTIES:
+:EXPORT_HUGO_MENU: :menu main
+:END:
+#+end_src
+
+** Predefinir páginas generales
+Adicionalmente se puede poner datos extras programando en config.toml así:
+#+begin_src toml
+[menu]
+  [[languajes.es.menu.main]]
+    identifier = "post"
+    title = "notas"
+    name = "Notas en General"
+    url = "/post/"
+    weight = -110
+#+end_src
+
+* Elm
+** Asegurar compilación 
+Validar que en root del proyecto está el archivo ejecutable ~build-elm.sh~
+Y que el packaje.json hace referencia a este archivo para compilar elm en dado caso.
+
+** Compilación e Inclusión
+Se compila y se incluye automaticamente con los comandos/scripts de package.json
+** Definir cual aplicación corresponde en cada página
+En el frontmatter de la hoja correspondiente, donde va la aplicación de JS ó Elm, se debe poner elm = "NombreEntryJS"
+Poniendo solo el nombre de la aplicación sin la extensión (el ".js")
+O bien, si es en orgmode con:
+    ~#+hugo_custom_front_matter: :elm AlpineConElm~
+ó para cada arbol, dentro de las propiedades, así:
+    ~:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :key1 SpecialElmApp~
+Para esto la aplicación en JS se pone ~assets/js/NombreEntryJS.js~
+** Poner un div manualmente en la hoja donde corresponda *por hacer*
+con un ~<div id="myapp"></div>~ o el id que sea, para definir el área que toma el la aplicación.
+** Se crea el script de Inicialización en nombreElm.js en assets/js
+De ahí se importan las aplicación(es) de js.
+#+begin_src javascript
+var app = Elm.Main.init({
+    node: document.getElementById('myapp')
+  });
+app.ports.deElmAlJS.subscribe(function(message) {
+    console.log(message);
+});
+elemento.addEventListener("tipEvento", function(event) {
+    app.ports.messageReceiver.send(event.data);
+});
+#+end_src
+También se puede escribir de Javascript cualquier programas.
+** Colocar las aplicaciones de Elm
+en assets/elm/src/nombreEntryJS/ElmApp.elm
+nombreEntryJS es lo que se puso en el front Matter
+Y es el mismo nombre que tendrá la aplicación compilada en assets/elm/nombreEntryJS.js y que se importará en el header.
+** Para usar tailwind.el
+Intenté usar [[https://github.com/monty5811/postcss-elm-tailwind][postcss-elm-tailwind]] pero no jaló. Porque el tiempo de compilación era demasiado alto. 
+La idea es pues, que en elm se usen las menos clases posibles de tailwind y las más posibles ponerlas en el css agrupadas con @apply.
+
+** En resumen
+En ~assets/js~ se va a poner las apps de js y las integradoras de elm
+en ~assets/elm~ se ponen automáticamente las apps compiladas por Elm
+En ~assets/elm/src~ y en su respectivo folder se ponen las apps de elm
+
+* Módulos
+El plan es usar módulos para desplegar en diferentes páginas lo que se haga en base2 según lo queramos meter.
+Para esto, base2 debe ser un módulo go. Lo cual ya va a estar realizado.
+** Cómo insertar un módulo en la página nueva
+Luego:
+*** Primero convertimos la nueva página también en un módulo
+*** Luego definimos el módulo en config.toml
+En la páginas en cuestión: que carpetas vamos a jalar y donde ponerla así:
+#+begin_src toml
+[module]
+  [[module.imports]]
+    disable = false
+    ignoreConfig = false
+    path = "github.com/rolojf/b1"
+
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+#+end_src
+
+*** Finalmente para evitar jalar de github modificamos el go.mod así:
+#+begin_src 
+module github.com/rolojf/p1
+
+replace github.com/rolojf/b1 => /home/rolo/Documents/webRepos/probandoMods/base
+
+go 1.15
+
+require github.com/rolojf/b1 v0.0.0-20200913212916-911e3ab31779 // indirect
+#+end_src
+
+*** Finalmente se incorpora el módulo y la parte requerida sola al correr hugo.
+Ojo, no se copian las cosas (al parecer) pero en el entregable (public) si aparecen.
+
+** Cómo convertir algo en un módulo
+Primero se requiere tener instalado go en la compu.
+Luego, el repositorio debe ser inicializado como un módulo de go con:
+
+~$hugo mod init github.com/me-me-me/my-hugo-project~
+
+Y con esto se crean los go.mod y go.sum.
+
+** Para actualizar un módulo para incorporarlo
+Solo con:
+~$ hugo mod get -u github.com/twbs/bootstrap~
+
+O si queremos una versión en particular.
+~$ hugo mod get github.com/twbs/bootstrap@v3.4.0~
+
+* Fonts
+Actualmente, hasta no encontrar una mejor manera de importar los fonts, 
+
+Copiar los font files así:
+
+~./node_module/fontsource-inter/files/ -> static/fonts/~
+
+Copiar los css que hacen refrencia a los fonts así:
+
+~./node_module/fontsource-inter/latin.css + ./node_module/fontsource-inter/latin-ext.css  -> assets/css/inter.css~
+
+Modifico la direcciones a que apunten a el folder, por ejemplo así: ~url('/fonts/inter-latin-100-normal.woff2')~
