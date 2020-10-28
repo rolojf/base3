@@ -12,7 +12,7 @@ for dir in assets/elm/src/*/     # list directories
            cuales+="${elmos##*/} "
          done
        cd $dir # assets/elm/src/${dira##*/}
-       elm make $cuales--output=../../${dira##*/}.js --optimize
+       elm make $cuales--output=../../${dira##*/}.elm.js --optimize
        cd ../../../../
      else
        echo "$dira está vacio"
