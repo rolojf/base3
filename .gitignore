@@ -39,7 +39,6 @@ resources/_gen/
 resources/_gen/*
 /old-assets/
 /static/assets
-/assets/js/
 /TAGS
 *.html#
 /pre-delete/
