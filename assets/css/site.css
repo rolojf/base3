@@ -2,8 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "css/inter.css";
-@import "css/misbasicos.css";
-@import "css/modales.css";
-@import "css/mio.css";
-@import "css/especial.css";
+@import "inter.css";
+@import "misbasicos.css";
+@import "modales.css";
+@import "mio.css";
+@import "especial.css";
