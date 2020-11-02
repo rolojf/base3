@@ -1,0 +1,9 @@
+/* Este es el documento de entrada */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "css/inter.css";
+@import "css/misbasicos.css";
+@import "css/modales.css";
+@import "css/mio.css";
+@import "css/especial.css";

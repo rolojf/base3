@@ -1,14 +1,8 @@
-{{ $fonts := resources.Get "css/inter.css" }}
-{{ $miTailwind := resources.Get "css/mitailwind.css" }}
-{{ $misBasicos := resources.Get "css/misbasicos.css" }}
-{{ $modales := resources.Get "css/modales.css" }}
-{{ $mio := resources.Get "css/mio.css" }}
-{{ $especial := resources.Get "css/especial.css" }}
-
-{{ $estilo := slice $fonts $miTailwind $misBasicos $modales $mio $especial | resources.Concat "css/site.css" | resources.PostCSS (dict "config" "assets/css/postcss.config.js" ) }}
+{{ $psOpciones := dict "config" "assets/css/postcss.config.js" "inlineImports" true }}
+{{ $estilo := resources.Get "css/site.css" | resources.PostCSS $psOpciones }}
 {{ if hugo.IsProduction }}
-   {{ $miCSS := $estilo | minify | fingerprint | resources.PostProcess }}
-   <link rel="stylesheet" type="text/css" href="{{ $miCSS.RelPermalink }}" integrity="{{ $miCSS.Data.Integrity }}">
+   {{ $estilo = $estilo | minify | fingerprint | resources.PostProcess }}
+   <link rel="stylesheet" type="text/css" href="{{ $estilo.RelPermalink }}" integrity="{{ $estilo.Data.Integrity }}">
 {{ else }}
    <link rel="stylesheet" type="text/css" href="{{ $estilo.RelPermalink }}">
 {{ end }}
