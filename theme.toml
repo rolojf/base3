@@ -1,0 +1,12 @@
+name = "base3"
+license = "MIT"
+licenselink = "https://github.com/rolojf/base3/LICENSE.md"
+description = "Personal proyects base template"
+homepage = "https://rolo.tips"
+tags = ["minimal", "blog", "personal"]
+features = ["blog"]
+min_version = "0.58"
+
+[author]
+  name = "Rolando Flores"
+  homepage = "https://rolo.tips"
