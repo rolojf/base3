@@ -22,12 +22,13 @@
     "@sanity/client": "^2.0.1",
     "@tailwindcss/typography": "^0.2.0",
     "@tailwindcss/ui": "^0.6.2",
-    "alpinejs": "^2.7.2",
+    "alpinejs": "^2.7.3",
     "autoprefixer": "^10.0.1",
     "fontsource-inter": "^3.0.5",
+    "postcss": "^8.1.4",
+    "postcss-cli": "^8.2.0",
     "postcss-custom-properties": "^10.0.0",
     "postcss-nested": "^5.0.1",
-    "purgecss": "^3.0.0",
     "tailwindcss": "^1.9.6"
   }
 }

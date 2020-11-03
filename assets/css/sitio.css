@@ -1,7 +1,7 @@
 /* Este es el documento de entrada */
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @import "inter.css";
 @import "misbasicos.css";

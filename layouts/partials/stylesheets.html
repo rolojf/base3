@@ -1,5 +1,6 @@
 {{ $psOpciones := dict "config" "assets/css/postcss.config.js" "inlineImports" true }}
-{{ $estilo := resources.Get "css/site.css" | resources.PostCSS $psOpciones }}
+{{ $estilo := resources.Get "css/sitio.css" }}
+{{ $estilo = $estilo | resources.PostCSS $psOpciones }}
 {{ if hugo.IsProduction }}
    {{ $estilo = $estilo | minify | fingerprint | resources.PostProcess }}
    <link rel="stylesheet" type="text/css" href="{{ $estilo.RelPermalink }}" integrity="{{ $estilo.Data.Integrity }}">

@@ -12,10 +12,8 @@ const em = (px, base) => `${round(px / base)}em`;
 const px = (px) => `${px}px`;
 
 const tailwindConfig = {
-   important: true, // See https://tailwindcss.com/docs/configuration#important
-   experimental: {
-      applyComplexClasses: true, // See https://github.com/tailwindlabs/tailwindcss/pull/2159
-   },
+   important: true,
+   experimental: { applyComplexClasses: true },
    purge: {
       enabled: process.env.HUGO_ENVIRONMENT === "production",
       content: ["./hugo_stats.json"],
