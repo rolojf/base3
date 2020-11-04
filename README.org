@@ -6,29 +6,16 @@ En especial se debe poner en el front matter:
 Sin embargo el tema en sí, es un subtree apararte 
 * Redactar en bilingue
 En el menu aparece la opción de traducido si la hay.
-En general se establece
-
-#+begin_src org
-#+HUGO_BASE_DIR: ~/Private/elemento/websites/base2/
-#+end_src
+En general se establece definiendo la sección para ambos o para cada uno.
 
 Y se documenta en sub encabezados los dos archivos poniendo para el de español
 #+begin_src org
 :PROPERTIES: 
-:EXPORT_FILE_NAME: voice-recording
-:EXPORT_HUGO_SECTION: /post/
+:EXPORT_FILE_NAME: voice-recording.en.md
 :END:
 #+end_src
 
-Asegurando que tiene el mismo nombre
-#+begin_src org
-:PROPERTIES: 
-:EXPORT_FILE_NAME: voice-recording
-:EXPORT_HUGO_SECTION: en/post/
-:END:
-#+end_src
-
-En caso de querer poner nombre diferente
+En caso de querer poner nombre diferente o sección diferente
 #+begin_src org
 :PROPERTIES: 
 :EXPORT_FILE_NAME: grabacion-de-voz
