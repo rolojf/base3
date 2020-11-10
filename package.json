@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "run-p dev:elm dev:hugo",
-    "dev:hugo": "NODE_ENV=development hugo server --disableFastRender --navigateToChanged",
+    "dev:hugo": "NODE_ENV=development hugo server --disableFastRender --navigateToChanged --buildDrafts",
     "dev:elm": "nodemon --exec ./build-elm.sh",
     "prod": "run-s deploy:assets build:hugo",
     "deploy:assets": "./build-elm-optimiza.sh && ./optim-elm.sh",

@@ -1,19 +1,24 @@
 #!/bin/bash
-
-for dir in assets/elm/src/*/     # list directories
+for dir in assets/elm/*/     # list directories
   do
     dira=${dir%*/}      # remove the trailing "/"
-    echo $dira
-    cuales=""
+    echo dir = $dir
+    echo dira = $dira
      # look for empty dir 
-     if [ "$(ls -A $dira)" ]; then
-       for elmos in $dir*.elm
+     if [ "$(ls -A $dira/src)" ]; then
+       for elmos in $dira/src/*.elm
          do
-           cuales+="${elmos##*/} "
-         done
-       cd $dir # assets/elm/src/${dira##*/}
-       elm make $cuales--output=../../${dira##*/}.js $@
-       cd ../../../../
+           echo elmos = $elmos
+           cual="${elmos##*/} "
+           echo cual = $cual
+           echo Cambiando de Directorio
+           cd $dir # assets/elm/src/${dira##*/}
+           pwd
+           elm make ./src/$cual--output=../${dira##*/}.js
+           echo De regreso al directorio base
+           cd ../../../
+           pwd
+       done
      else
        echo "$dira está vacio"
      fi

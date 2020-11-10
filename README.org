@@ -71,12 +71,13 @@ O bien, si es en orgmode con:
 ó para cada arbol, dentro de las propiedades, así:
     ~:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :key1 SpecialElmApp~
 Para esto la aplicación en JS se pone ~assets/js/NombreEntryJS.js~
+Por ahora solo es una aplicación por app compilada, en un futuro SDM hay que modificar los archivos compiladores para poder que en un solo archivo de ELM se compilen dos apps para una página.
 ** Poner un div manualmente en la hoja donde corresponda *por hacer*
 con un ~<div id="myapp"></div>~ o el id que sea, para definir el área que toma el la aplicación.
 ** Se crea el script de Inicialización en nombreElm.js en assets/js
 De ahí se importan las aplicación(es) de js.
 #+begin_src javascript
-var app = Elm.Main.init({
+var app = Elm.NameApp.init({
     node: document.getElementById('myapp')
   });
 app.ports.deElmAlJS.subscribe(function(message) {
@@ -86,11 +87,14 @@ elemento.addEventListener("tipEvento", function(event) {
     app.ports.messageReceiver.send(event.data);
 });
 #+end_src
-También se puede escribir de Javascript cualquier programas.
+Donde NameApp es el nombre de la app en: ~assets/elm/nombreEntryJS/src/NameApp.elm~
+También se puede agregar Javascript cualquier programas.
 ** Colocar las aplicaciones de Elm
-en assets/elm/src/nombreEntryJS/ElmApp.elm
-nombreEntryJS es lo que se puso en el front Matter
+Después de inicializar con ~$elm init~ en ~assets/elm/nombreEntryJS/~
+Poner dentro de ahí la app en ~src/NameApp.elm~
+~NameApp~ es diferente del nombre que se puso en el front Matter.
 Y es el mismo nombre que tendrá la aplicación compilada en assets/elm/nombreEntryJS.js y que se importará en el header.
+
 ** Para usar tailwind.el
 Intenté usar [[https://github.com/monty5811/postcss-elm-tailwind][postcss-elm-tailwind]] pero no jaló. Porque el tiempo de compilación era demasiado alto. 
 La idea es pues, que en elm se usen las menos clases posibles de tailwind y las más posibles ponerlas en el css agrupadas con @apply.
