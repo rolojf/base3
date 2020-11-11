@@ -1,15 +1,0 @@
-
-SpecialApp.elm,392
-type alias Model =type26,448
-type alias ModelModel26,448
-init flags =init33,557
-type MsgMsg43,705
-    = IncInc44,714
-    | SetSet45,724
-    | TestServerTestServer46,738
-    | OnServerResponseOnServerResponse47,755
-update message model =update51,851
-httpErrorToString err =httpErrorToString78,1603
-add1 model =add1102,1961
-view model =view113,2118
-main =main155,3567

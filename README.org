@@ -100,9 +100,22 @@ Intenté usar [[https://github.com/monty5811/postcss-elm-tailwind][postcss-elm-t
 La idea es pues, que en elm se usen las menos clases posibles de tailwind y las más posibles ponerlas en el css agrupadas con @apply.
 
 ** En resumen
-En ~assets/js~ se va a poner las apps de js y las integradoras de elm
-en ~assets/elm~ se ponen automáticamente las apps compiladas por Elm
-En ~assets/elm/src~ y en su respectivo folder se ponen las apps de elm
+*** App integradora
+En ~assets/js/NombreDelParam.js~ se va a poner las integradoras de elm
+En la app integradora de elm se ahce referencia a un nodo del DOM con id que debe ser igual en la página de internet.
+
+*** La aplicación en Elm
+Se crea un folder en ~assets/elm/NombreDelParam/~ y ahí se inicializa la app de Eln con ~$elm init~ 
+
+*** El programa de Elm
+Luego en ~src/NombreApp.elm~ se ponen las apps en lenguaje Elm
+Dentro de la app en elm se escribe:
+#+begin_src elm
+port module NombreApp exposing (..)
+#+end_src
+
+*** Despues de compilado
+Las apps compiladas a JS se pondrán en  ~assets/elm~
 
 * Módulos
 El plan es usar módulos para desplegar en diferentes páginas lo que se haga en base2 según lo queramos meter.

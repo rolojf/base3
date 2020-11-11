@@ -29,7 +29,7 @@
               src="{{ $elmjsFile.RelPermalink }}"
               integrity="{{ $elmjsFile.Data.Integrity }}"
               crossorigin="anonymous"
-              defer>
+              >
       </script>
    {{ else }}
       {{ $jsNombre := printf "elm/%s.js" $vaElm }}
@@ -37,7 +37,7 @@
       {{ $elmjsFile := resources.Get $jsNombre }}
       <script type="text/javascript"
               src="{{ $elmjsFile.RelPermalink }}"
-              defer>
+              >
       </script>
    {{ end }}
 {{ end }}

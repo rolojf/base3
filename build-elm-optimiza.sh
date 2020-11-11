@@ -14,7 +14,7 @@ for dir in assets/elm/*/     # list directories
            echo Cambiando de Directorio
            cd $dir # assets/elm/src/${dira##*/}
            pwd
-           echo elm make ./src/$cual--optimize --output=../${dira##*/}.elm.js 
+           elm make ./src/$cual--optimize --output=../${dira##*/}.elm.js 
            echo De regreso al directorio base
            cd ../../../
            pwd
