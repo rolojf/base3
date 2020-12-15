@@ -1,6 +1,8 @@
 // tailwind.config.js
 const defaultTheme = require("tailwindcss/defaultTheme");
+
 //const colorBrand = 'var(--color-pretty)';
+
 // Utils
 const round = (num) =>
    num
@@ -11,6 +13,7 @@ const rem = (px) => `${round(px / 16)}rem`;
 const em = (px, base) => `${round(px / base)}em`;
 const px = (px) => `${px}px`;
 
+// Configurando el Tailwindcss
 const tailwindConfig = {
    important: true,
    experimental: { applyComplexClasses: true },
@@ -18,8 +21,10 @@ const tailwindConfig = {
       enabled: process.env.HUGO_ENVIRONMENT === "production",
       content: ["./hugo_stats.json"],
       mode: "all",
+      preserveHtmlElements: false,
       options: {
-         // whitelist: [ 'pl-1', 'pl-3' ],
+         safelist: [/^elm-/],
+         fontFace: true,
          defaultExtractor: (content) => {
             let els = JSON.parse(content).htmlElements;
             els = els.tags.concat(els.classes, els.ids);
@@ -38,6 +43,7 @@ const tailwindConfig = {
    plugins: [require("@tailwindcss/ui"), require("@tailwindcss/typography")],
 };
 
+// Configurando el PostCSS
 module.exports = {
    plugins: [
       require("postcss-nested"),

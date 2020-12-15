@@ -63,6 +63,7 @@ Y que el packaje.json hace referencia a este archivo para compilar elm en dado c
 
 ** Compilación e Inclusión
 Se compila y se incluye automaticamente con los comandos/scripts de package.json
+
 ** Definir cual aplicación corresponde en cada página
 En el frontmatter de la hoja correspondiente, donde va la aplicación de JS ó Elm, se debe poner elm = "NombreEntryJS"
 Poniendo solo el nombre de la aplicación sin la extensión (el ".js")
@@ -72,8 +73,10 @@ O bien, si es en orgmode con:
     ~:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :key1 SpecialElmApp~
 Para esto la aplicación en JS se pone ~assets/js/NombreEntryJS.js~
 Por ahora solo es una aplicación por app compilada, en un futuro SDM hay que modificar los archivos compiladores para poder que en un solo archivo de ELM se compilen dos apps para una página.
+
 ** Poner un div manualmente en la hoja donde corresponda *por hacer*
-con un ~<div id="myapp"></div>~ o el id que sea, para definir el área que toma el la aplicación.
+con un ~<div id="myapp"></div>~ o el id que sea, para definir el área que toma el la aplicación. El id es el que se establece en el sig. punto.
+
 ** Se crea el script de Inicialización en nombreElm.js en assets/js
 De ahí se importan las aplicación(es) de js.
 #+begin_src javascript
@@ -96,8 +99,8 @@ Poner dentro de ahí la app en ~src/NameApp.elm~
 Y es el mismo nombre que tendrá la aplicación compilada en assets/elm/nombreEntryJS.js y que se importará en el header.
 
 ** Para usar tailwind.el
-Intenté usar [[https://github.com/monty5811/postcss-elm-tailwind][postcss-elm-tailwind]] pero no jaló. Porque el tiempo de compilación era demasiado alto. 
-La idea es pues, que en elm se usen las menos clases posibles de tailwind y las más posibles ponerlas en el css agrupadas con @apply.
+Definir clases que inicien con *"elm-"* para las cosas dentro de la aplicación de elm.
+Poner la definición de las clases en ~./assets/css/especial.css~ usando si quieres la opción ~@apply~ dentro de la definición de cada clase.
 
 ** En resumen
 *** App integradora
