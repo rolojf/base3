@@ -1,0 +1,11 @@
+<div class="lg:grid lg:grid-cols-3 lg:gap-4 xl:grid-cols-4 xl:gap-6">
+   <div class="lg:col-span-2 xl:col-span-3">
+      {{.Inner}}
+   </div>
+   {{/* partial "sidebar.html" . */}}
+</div>
+{{/* $secciones := default .Site.Params.mainSections .Params.mainSections }}
+{{ $paginas := where .Site.RegularPages "Type" "in" $secciones }}
+{{ partial "lista-resumen.html" $paginas }}
+{{ partial "formulario.html" . */}}
+</div>
